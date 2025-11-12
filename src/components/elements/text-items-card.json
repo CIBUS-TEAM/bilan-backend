@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_elements_text_items_cards",
+  "info": {
+    "displayName": "TextItemsCard"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "component",
+      "component": "utilities.basic-image",
+      "repeatable": false,
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_elements_text_cards_cards",
+  "info": {
+    "displayName": "TextCardsCard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "badges": {
+      "type": "component",
+      "component": "utilities.text",
+      "repeatable": true
+    },
+    "button": {
+      "type": "component",
+      "component": "utilities.basic-link",
+      "repeatable": false,
+      "required": true
+    },
+    "image": {
+      "type": "component",
+      "component": "utilities.basic-image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

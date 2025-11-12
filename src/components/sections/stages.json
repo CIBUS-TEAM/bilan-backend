@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_sections_stages",
+  "info": {
+    "displayName": "Stages"
+  },
+  "options": {},
+  "attributes": {
+    "headers": {
+      "type": "component",
+      "component": "elements.section-headers",
+      "repeatable": false,
+      "required": true
+    },
+    "image": {
+      "type": "component",
+      "component": "utilities.basic-image",
+      "repeatable": false,
+      "required": true
+    },
+    "items": {
+      "type": "component",
+      "component": "elements.stages-item",
+      "repeatable": true,
+      "required": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_utilities_form_fields",
+  "info": {
+    "displayName": "FormField"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "placeholder": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_elements_hero_items",
+  "info": {
+    "displayName": "HeroItem"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_elements_pricing_items",
+  "info": {
+    "displayName": "PricingItem"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "string",
+      "required": true
+    },
+    "term": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

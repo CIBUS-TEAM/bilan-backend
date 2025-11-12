@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_utilities_basic_links",
+  "info": {
+    "displayName": "BasicLink"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "text",
+      "required": true
+    },
+    "newTab": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "config": {}
+}

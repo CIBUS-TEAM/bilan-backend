@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sections_our_projects",
+  "info": {
+    "displayName": "OurProjects"
+  },
+  "options": {},
+  "attributes": {
+    "headers": {
+      "type": "component",
+      "component": "elements.section-headers",
+      "repeatable": false,
+      "required": true
+    },
+    "cards": {
+      "type": "component",
+      "component": "elements.our-projects-card",
+      "repeatable": true,
+      "required": true
+    },
+    "button": {
+      "type": "component",
+      "component": "utilities.basic-link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

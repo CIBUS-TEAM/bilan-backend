@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_sections_cta_banners",
+  "info": {
+    "displayName": "CTABanner"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "button": {
+      "type": "component",
+      "component": "utilities.basic-link",
+      "repeatable": false,
+      "required": true
+    },
+    "image": {
+      "type": "component",
+      "component": "utilities.basic-image",
+      "repeatable": false,
+      "required": true
+    }
+  },
+  "config": {}
+}

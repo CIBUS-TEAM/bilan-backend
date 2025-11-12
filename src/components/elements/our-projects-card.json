@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_elements_our_projects_cards",
+  "info": {
+    "displayName": "OurProjectsCard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "year": {
+      "type": "integer",
+      "required": true
+    },
+    "image": {
+      "type": "component",
+      "component": "utilities.basic-image",
+      "repeatable": false,
+      "required": true
+    },
+    "link": {
+      "type": "component",
+      "component": "utilities.basic-link",
+      "repeatable": false,
+      "required": true
+    }
+  },
+  "config": {}
+}

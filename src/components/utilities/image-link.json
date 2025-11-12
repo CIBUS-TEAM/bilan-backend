@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_utilities_image_links",
+  "info": {
+    "displayName": "ImageLink"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "component",
+      "component": "utilities.basic-image",
+      "repeatable": false,
+      "required": true
+    },
+    "link": {
+      "type": "component",
+      "component": "utilities.basic-link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

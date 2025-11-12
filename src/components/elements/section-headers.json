@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_elements_section_headers",
+  "info": {
+    "displayName": "SectionHeaders"
+  },
+  "options": {},
+  "attributes": {
+    "headers": {
+      "type": "component",
+      "component": "elements.section-headers",
+      "repeatable": false,
+      "required": true
+    },
+    "isCentered": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "config": {}
+}

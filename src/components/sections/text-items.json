@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_sections_text_items",
+  "info": {
+    "displayName": "TextItems"
+  },
+  "options": {},
+  "attributes": {
+    "headers": {
+      "type": "component",
+      "component": "elements.section-headers",
+      "repeatable": false,
+      "required": true
+    },
+    "isHeadCentered": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "items": {
+      "type": "component",
+      "component": "elements.text-items-item",
+      "repeatable": true
+    },
+    "cards": {
+      "type": "component",
+      "component": "elements.text-items-card",
+      "repeatable": true
+    },
+    "isBackgroundGrid": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "config": {}
+}

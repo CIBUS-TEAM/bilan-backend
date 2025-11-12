@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_text_cards",
+  "info": {
+    "displayName": "TextCards"
+  },
+  "options": {},
+  "attributes": {
+    "headers": {
+      "type": "component",
+      "component": "elements.section-headers",
+      "repeatable": false,
+      "required": true
+    },
+    "cards": {
+      "type": "component",
+      "component": "elements.text-cards-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

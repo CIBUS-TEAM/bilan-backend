@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_sections_pricings",
+  "info": {
+    "displayName": "Pricing"
+  },
+  "options": {},
+  "attributes": {
+    "headers": {
+      "type": "component",
+      "component": "elements.section-headers",
+      "repeatable": false,
+      "required": true
+    },
+    "typeColumnTitle": {
+      "type": "string",
+      "required": true
+    },
+    "priceColumnTitle": {
+      "type": "string",
+      "required": true
+    },
+    "termColumnTitle": {
+      "type": "string",
+      "required": true
+    },
+    "items": {
+      "type": "component",
+      "component": "elements.pricing-item",
+      "repeatable": true
+    },
+    "button": {
+      "type": "component",
+      "component": "utilities.basic-link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}
