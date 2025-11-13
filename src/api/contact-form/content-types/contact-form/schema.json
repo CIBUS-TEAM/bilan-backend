@@ -15,31 +15,15 @@
     }
   },
   "attributes": {
-    "badge": {
-      "type": "text",
+    "headers": {
+      "type": "component",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "required": true
-    },
-    "title": {
-      "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "required": true
-    },
-    "description": {
-      "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
+      "component": "elements.section-headers",
+      "repeatable": false,
       "required": true
     },
     "nameField": {

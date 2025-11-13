@@ -446,13 +446,6 @@ export interface ApiContactFormContactForm extends Struct.SingleTypeSchema {
     };
   };
   attributes: {
-    badge: Schema.Attribute.Text &
-      Schema.Attribute.Required &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     contactItems: Schema.Attribute.Component<'elements.contact-item', true> &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
@@ -463,7 +456,7 @@ export interface ApiContactFormContactForm extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    description: Schema.Attribute.Text &
+    headers: Schema.Attribute.Component<'elements.section-headers', false> &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -505,13 +498,6 @@ export interface ApiContactFormContactForm extends Struct.SingleTypeSchema {
       }>;
     publishedAt: Schema.Attribute.DateTime;
     submitButton: Schema.Attribute.Component<'utilities.basic-link', false> &
-      Schema.Attribute.Required &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    title: Schema.Attribute.Text &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
