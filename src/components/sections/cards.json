@@ -5,16 +5,11 @@
   },
   "options": {},
   "attributes": {
-    "headers": {
+    "cards": {
       "type": "component",
-      "component": "elements.section-headers",
-      "repeatable": false,
+      "component": "elements.cards-card",
+      "repeatable": true,
       "required": true
-    },
-    "items": {
-      "type": "component",
-      "component": "utilities.text",
-      "repeatable": true
     }
   },
   "config": {}

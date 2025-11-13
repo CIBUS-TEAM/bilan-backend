@@ -1,5 +1,16 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface ElementsCardsCard extends Struct.ComponentSchema {
+  collectionName: 'components_elements_cards_cards';
+  info: {
+    displayName: 'CardsCard';
+  };
+  attributes: {
+    headers: Schema.Attribute.Component<'elements.section-headers', false>;
+    items: Schema.Attribute.Component<'utilities.text', true>;
+  };
+}
+
 export interface ElementsContactItem extends Struct.ComponentSchema {
   collectionName: 'components_elements_contact_items';
   info: {
@@ -123,9 +134,8 @@ export interface SectionsCards extends Struct.ComponentSchema {
     displayName: 'Cards';
   };
   attributes: {
-    headers: Schema.Attribute.Component<'elements.section-headers', false> &
+    cards: Schema.Attribute.Component<'elements.cards-card', true> &
       Schema.Attribute.Required;
-    items: Schema.Attribute.Component<'utilities.text', true>;
   };
 }
 
@@ -355,6 +365,7 @@ export interface UtilitiesText extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'elements.cards-card': ElementsCardsCard;
       'elements.contact-item': ElementsContactItem;
       'elements.hero-item': ElementsHeroItem;
       'elements.our-projects-card': ElementsOurProjectsCard;
