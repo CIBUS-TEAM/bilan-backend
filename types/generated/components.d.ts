@@ -58,11 +58,12 @@ export interface ElementsSectionHeaders extends Struct.ComponentSchema {
     displayName: 'SectionHeaders';
   };
   attributes: {
-    headers: Schema.Attribute.Component<'elements.section-headers', false> &
-      Schema.Attribute.Required;
+    badge: Schema.Attribute.Text;
+    description: Schema.Attribute.Text;
     isCentered: Schema.Attribute.Boolean &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<false>;
+    title: Schema.Attribute.Text;
   };
 }
 
@@ -236,9 +237,6 @@ export interface SectionsTextItems extends Struct.ComponentSchema {
     headers: Schema.Attribute.Component<'elements.section-headers', false> &
       Schema.Attribute.Required;
     isBackgroundGrid: Schema.Attribute.Boolean &
-      Schema.Attribute.Required &
-      Schema.Attribute.DefaultTo<false>;
-    isHeadCentered: Schema.Attribute.Boolean &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<false>;
     items: Schema.Attribute.Component<'elements.text-items-item', true>;

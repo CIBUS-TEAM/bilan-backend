@@ -673,6 +673,23 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
   };
   attributes: {
     children: Schema.Attribute.Relation<'oneToMany', 'api::page.page'>;
+    content: Schema.Attribute.DynamicZone<
+      [
+        'sections.text-items',
+        'sections.text-cards',
+        'sections.stages',
+        'sections.pricing',
+        'sections.our-projects',
+        'sections.hero',
+        'sections.cta-banner',
+        'sections.cards',
+      ]
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

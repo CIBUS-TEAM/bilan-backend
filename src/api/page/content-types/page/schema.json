@@ -61,6 +61,24 @@
       "relation": "manyToOne",
       "target": "api::tag.tag",
       "inversedBy": "pages"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "components": [
+        "sections.text-items",
+        "sections.text-cards",
+        "sections.stages",
+        "sections.pricing",
+        "sections.our-projects",
+        "sections.hero",
+        "sections.cta-banner",
+        "sections.cards"
+      ]
     }
   }
 }

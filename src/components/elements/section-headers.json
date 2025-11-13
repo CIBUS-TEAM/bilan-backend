@@ -5,16 +5,20 @@
   },
   "options": {},
   "attributes": {
-    "headers": {
-      "type": "component",
-      "component": "elements.section-headers",
-      "repeatable": false,
-      "required": true
-    },
     "isCentered": {
       "type": "boolean",
       "required": true,
       "default": false
+    },
+    "badge": {
+      "type": "text"
+    },
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text",
+      "required": false
     }
   },
   "config": {}
