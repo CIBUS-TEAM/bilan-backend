@@ -148,7 +148,9 @@ export interface SectionsCtaBanner extends Struct.ComponentSchema {
     button: Schema.Attribute.Component<'utilities.basic-link', false> &
       Schema.Attribute.Required;
     description: Schema.Attribute.Text & Schema.Attribute.Required;
-    image: Schema.Attribute.Component<'utilities.basic-image', false> &
+    desktopImage: Schema.Attribute.Component<'utilities.basic-image', false> &
+      Schema.Attribute.Required;
+    mobileImage: Schema.Attribute.Component<'utilities.basic-image', false> &
       Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
   };

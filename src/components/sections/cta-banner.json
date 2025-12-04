@@ -19,7 +19,13 @@
       "repeatable": false,
       "required": true
     },
-    "image": {
+    "desktopImage": {
+      "type": "component",
+      "component": "utilities.basic-image",
+      "repeatable": false,
+      "required": true
+    },
+    "mobileImage": {
       "type": "component",
       "component": "utilities.basic-image",
       "repeatable": false,
