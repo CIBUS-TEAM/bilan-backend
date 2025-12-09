@@ -15,6 +15,11 @@
       "type": "component",
       "component": "elements.text-cards-card",
       "repeatable": true
+    },
+    "isCardsGridColumn": {
+      "type": "boolean",
+      "required": true,
+      "default": false
     }
   },
   "config": {}

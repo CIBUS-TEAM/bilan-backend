@@ -236,6 +236,9 @@ export interface SectionsTextCards extends Struct.ComponentSchema {
     cards: Schema.Attribute.Component<'elements.text-cards-card', true>;
     headers: Schema.Attribute.Component<'elements.section-headers', false> &
       Schema.Attribute.Required;
+    isCardsGridColumn: Schema.Attribute.Boolean &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<false>;
   };
 }
 
