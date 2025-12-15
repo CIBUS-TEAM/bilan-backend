@@ -1,0 +1,69 @@
+{
+  "kind": "singleType",
+  "collectionName": "not_founds",
+  "info": {
+    "singularName": "not-found",
+    "pluralName": "not-founds",
+    "displayName": "NotFound"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "button": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "utilities.basic-link",
+      "repeatable": false
+    },
+    "desktopImage": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "component": "utilities.basic-image",
+      "repeatable": false,
+      "required": true
+    },
+    "mobileImage": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "component": "utilities.basic-image",
+      "repeatable": false,
+      "required": true
+    }
+  }
+}

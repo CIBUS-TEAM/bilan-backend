@@ -642,6 +642,71 @@ export interface ApiHeaderHeader extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiNotFoundNotFound extends Struct.SingleTypeSchema {
+  collectionName: 'not_founds';
+  info: {
+    displayName: 'NotFound';
+    pluralName: 'not-founds';
+    singularName: 'not-found';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    button: Schema.Attribute.Component<'utilities.basic-link', false> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    desktopImage: Schema.Attribute.Component<'utilities.basic-image', false> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::not-found.not-found'
+    >;
+    mobileImage: Schema.Attribute.Component<'utilities.basic-image', false> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPagePage extends Struct.CollectionTypeSchema {
   collectionName: 'pages';
   info: {
@@ -1259,6 +1324,7 @@ declare module '@strapi/strapi' {
       'api::contact-form.contact-form': ApiContactFormContactForm;
       'api::footer.footer': ApiFooterFooter;
       'api::header.header': ApiHeaderHeader;
+      'api::not-found.not-found': ApiNotFoundNotFound;
       'api::page.page': ApiPagePage;
       'api::tag.tag': ApiTagTag;
       'plugin::content-releases.release': PluginContentReleasesRelease;
